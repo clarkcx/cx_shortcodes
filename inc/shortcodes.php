@@ -26,7 +26,7 @@ add_shortcode('intro', 'cx_sc_intro');
 function cx_sc_intro( $atts, $content = null ) {
 	extract(shortcode_atts(array(
 				"id" => '',
-				"class" => 'intro'
+				"class" => 'lead'
 			), $atts));
 
 	$id = ($id <> '') ? " id='" . esc_attr( $id ) . "'" : '';
