@@ -14,5 +14,6 @@ include('shortcodes/sc-video.php'); // Video
 include('shortcodes/sc-faqs.php'); // FAQs
 include('shortcodes/sc-royal_slider.php'); // Royal Slider
 include('shortcodes/sc-twitter_widget.php'); // Twitter widget
+include('shortcodes/sc-tabbox.php'); // Tab box
 
 ?>
