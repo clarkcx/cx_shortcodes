@@ -3,7 +3,7 @@
 Plugin Name: Able Shortcodes
 Plugin URI: http://www.ablewild.com
 Description: Shortcodes to enhance standard WP functionality
-Version: 2.3.1
+Version: 2.3.2
 Author: Pete Clark
 Author URI: http://www.ablewild.com
 */
@@ -57,7 +57,7 @@ function cx_shortcodes_rmv_cap() {
 *************************************/
 
 function the_content_filter($content) {
-    $block = join("|",array("tabbox", "tabbox-part", "tabbox-content"));
+    $block = join("|",array("tabbox", "tabbox-section"));
     $rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
     $rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
 return $rep;
