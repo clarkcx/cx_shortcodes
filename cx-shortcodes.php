@@ -51,5 +51,18 @@ function cx_shortcodes_rmv_cap() {
     $wp_roles->remove_cap( 'author', 'view_cx' );
 }
 
+/*************************************
+* Stop Wordpress from creating P and 
+* BR tags inside our shortcodes
+*************************************/
+
+function the_content_filter($content) {
+    $block = join("|",array("tabbox", "tabbox-part", "tabbox-content"));
+    $rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);
+    $rep = preg_replace("/(<p>)?\[\/($block)](<\/p>|<br \/>)?/","[/$2]",$rep);
+return $rep;
+}
+add_filter("the_content", "the_content_filter");
+
 
 ?>
