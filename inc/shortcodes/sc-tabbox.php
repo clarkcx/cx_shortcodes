@@ -26,9 +26,9 @@ function cx_sc_tabbox_section( $atts, $content = null ) {
 
 	$output = '<div tabindex="0" class="m-tabbox-part">';
 	$output .= '<button class="m-tabbox-tab">'.$tab.'</button>';
-	$output .= '<div class="m-tabbox-content">';
+	$output .= '<div class="m-tabbox-content"><div class="m-tabbox-content-inner">';
 	$output .= do_shortcode($content);
-	$output .= '</div>';
+	$output .= '</div></div>';
 	$output .= '</div>';
 
 	return $output;
