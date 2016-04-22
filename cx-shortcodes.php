@@ -3,7 +3,7 @@
 Plugin Name: Able Shortcodes
 Plugin URI: http://www.ablewild.com
 Description: Shortcodes to enhance standard WP functionality
-Version: 2.3.4
+Version: 2.3.5
 Author: Pete Clark
 Author URI: http://www.ablewild.com
 */

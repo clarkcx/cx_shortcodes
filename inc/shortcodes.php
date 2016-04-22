@@ -17,5 +17,6 @@ include('shortcodes/sc-twitter_widget.php'); // Twitter widget
 include('shortcodes/sc-tabbox.php'); // Tab box
 include('shortcodes/sc-layouts.php'); // Layout shortcodes
 include('shortcodes/sc-facttable.php'); // Layout shortcodes
+include('shortcodes/sc-end_marker.php'); // End marker icon shortcode
 
 ?>
